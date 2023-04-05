@@ -20,7 +20,9 @@ class Solution {
             // In fact this func will return allTrees here, since it won't
             // enter the next for loop because left > right.
             // The null is for corner case when left or right is chosen
-            // as root, and they will lack either left or right children
+            // as root, and they will lack either left or right children,
+            // null is added to the generated linkedlist, so leftTrees or 
+            // rightTrees will return the only ele (null) to root as a child.
             allTrees.add(null);
         }
         for (int i = left; i <= right; i++) {
