@@ -24,6 +24,8 @@ class Solution {
         return recursiveCheck(head);
     }
 
+    // Because the program stablished a stack frame for each call,
+    // in fact the space complexity is o(n)
     public boolean recursiveCheck(ListNode curr) {
         if (curr != null) {
             if (!recursiveCheck(curr.next)) return false;
